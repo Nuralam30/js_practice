@@ -6,4 +6,4 @@ for(var i=0; i < num.length; i++){
     var element = num[i];
     total = total + element;
 }
-console.log('Total of the series :', total)
+console.log('Total of the series :', total);
