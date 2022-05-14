@@ -1,9 +1,14 @@
 
 function feetToMile(feet){
 
-    var feetValue = feet;
-    var mile = feetValue / 5280;
-    return mile.toFixed(6)
+    if( feet > 0) {
+        var mile = feet / 5280;
+        var totalMile = mile.toFixed(6);
+    }
+    else {
+        var totalMile = "Is not a correct number";
+    }
+    return totalMile
 }
 
 var mileValue = feetToMile(1000);
