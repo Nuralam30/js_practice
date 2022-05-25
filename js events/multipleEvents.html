@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple events</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Multiple events occur simultaneously</h1>
+        <ul id="mylist">
+            <li id="list-1">List 1</li>
+            <li id="list-2">List 2</li>
+            <li id="list-3">List 3</li>
+            <li id="list-4">List 4</li>
+        </ul>
+    </div>
+
+<script>
+    document.getElementById('list-1').addEventListener('click', function(){
+            console.log('first list clicked');
+            event.stopPropagation();
+    });
+
+    document.getElementById('mylist').addEventListener('click', function(){
+            console.log('my list clicked')
+    });
+
+    document.getElementById('container').addEventListener('click', function(){
+            console.log('container clicked')
+    });
+</script>
+    
+</body>
+</html>
