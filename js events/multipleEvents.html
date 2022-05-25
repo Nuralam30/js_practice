@@ -16,21 +16,36 @@
             <li id="list-3">List 3</li>
             <li id="list-4">List 4</li>
         </ul>
+
+        <button id="addNew">Add New List</button>
     </div>
 
 <script>
-    document.getElementById('list-1').addEventListener('click', function(){
-            console.log('first list clicked');
-            event.stopPropagation();
+    // document.getElementById('list-1').addEventListener('click', function(){
+    //         console.log('first list clicked');
+    //         event.stopPropagation();
+    // });
+
+    // document.getElementById('mylist').addEventListener('click', function(){
+    //         console.log('my list clicked')
+    // });
+
+    // document.getElementById('container').addEventListener('click', function(){
+    //         console.log('container clicked')
+    // });
+
+    document.getElementById('addNew').addEventListener('click', function(){
+        var items = document.getElementById('mylist');
+        var newItem = document.createElement('li');
+        newItem.innerText = 'new item added';
+        items.appendChild(newItem);
     });
 
-    document.getElementById('mylist').addEventListener('click', function(){
-            console.log('my list clicked')
-    });
 
-    document.getElementById('container').addEventListener('click', function(){
-            console.log('container clicked')
+    document.getElementById('mylist').addEventListener('click', function(event){
+        event.target.parentNode.removeChild(event.target);
     });
+    
 </script>
     
 </body>
