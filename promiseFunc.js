@@ -6,7 +6,7 @@ var promise1 = new Promise((resolve, reject) =>{
     if(completePromise){
         resolve('task completed...');
     }else{
-        reject('task cannot complete...');
+        reject(new Error('task cannot complete...'));
     }
 });
 
