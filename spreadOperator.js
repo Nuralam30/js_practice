@@ -14,5 +14,6 @@ console.log(allAges2)
 
  // print unique values in an array
 console.log([...new Set(ages1)]);
+console.log(Math.max(...ages1));
 
 
