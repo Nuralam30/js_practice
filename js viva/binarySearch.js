@@ -9,19 +9,22 @@ function binarySearch(array, el){
     var high = array.length -low;
     var mid = (low + high) / 2;
 
-    if(array[mid] > el){
-        high = mid;
-        mid = (low + high) / 2;
-    }
-    else if ( array[mid] < el){
-        low = mid;
-        mid = (low + high) / 2;
-    }
-    else if(array[mid] == el){
-        console.log('Found at position' + mid)
+
+    if(array.indexOf(el) !== -1){
+        if(array[mid] > el){
+            high = mid;
+            mid = (low + high) / 2;
+        }
+        if ( array[mid] < el){
+            low = mid;
+            mid = (low + high) / 2;
+        }
+        if(array[mid] == el){
+            console.log(array[mid] + ' position at :' + mid)
+        }
     }
     else{
-        console.log('This is not present in this array')
+        console.log("This value does not exist.")
     }
 }
 
