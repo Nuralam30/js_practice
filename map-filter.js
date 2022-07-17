@@ -15,8 +15,10 @@ square(numbers)
 
 
 // mapping method
-const result = numbers.map(function(element){
-    return element * element;
-});
+// const result = numbers.map(function(element){
+//     return element * element;
+// });
+
+const result = numbers.map( element => element * element);
 
 console.log(result)
