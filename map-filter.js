@@ -20,5 +20,7 @@ square(numbers)
 // });
 
 const result = numbers.map( element => element * element);
-
 console.log(result)
+
+const bigger = numbers.filter(num => num > 3)
+console.log(bigger)
