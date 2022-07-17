@@ -1,7 +1,7 @@
 
 // map-filter.js
 
-var array = [2, 3, 4, 5];
+var numbers = [2, 3, 4, 5];
 
 function square(arr){
     var output = []
@@ -11,4 +11,12 @@ function square(arr){
     }
     console.log(output)
 }
-square(array)
+square(numbers)
+
+
+// mapping method
+const result = numbers.map(function(element){
+    return element * element;
+});
+
+console.log(result)
