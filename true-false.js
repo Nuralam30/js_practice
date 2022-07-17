@@ -2,8 +2,8 @@
 // true-false.js
 
 // falsy value   '', 0, null, false, undefined, NaN
-
-let name = false;
+// truly value   ' ', '0', []
+let name = [];
 if(name){
     console.log('true value')
 }
