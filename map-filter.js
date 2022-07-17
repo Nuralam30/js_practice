@@ -23,4 +23,6 @@ const result = numbers.map( element => element * element);
 console.log(result)
 
 const bigger = numbers.filter(num => num > 3)
-console.log(bigger)
+
+const isThere = numbers.filter(num => num < 5)
+console.log(isThere)
