@@ -3,10 +3,9 @@
 const normalPerson = {
     name : 'Nura Alam',
     salary : 20000,
-    bonous : 2000,
-    getSalary : function(amount){   //method
+    getSalary : function(bonous, tips, tax){   //method
         console.log(this)
-        this.salary = this.salary + amount;
+        this.salary = this.salary + bonous - tips - tax;
         return this.salary;
     }
 }
@@ -20,7 +19,10 @@ const specialPeron = {
     salary : 28000
 }
 
-const specialPeronSalary = normalPerson.getSalary.bind(specialPeron);
-specialPeronSalary(3000);
-specialPeronSalary(3500);
+// const specialPeronSalary = normalPerson.getSalary.bind(specialPeron);
+// specialPeronSalary(3000);
+// specialPeronSalary(3500);
+// console.log(specialPeron.salary)
+
+normalPerson.getSalary.call(specialPeron, 2000, 200, 20)
 console.log(specialPeron.salary)
