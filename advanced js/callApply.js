@@ -24,5 +24,8 @@ const specialPeron = {
 // specialPeronSalary(3500);
 // console.log(specialPeron.salary)
 
-normalPerson.getSalary.call(specialPeron, 2000, 200, 20)
+// normalPerson.getSalary.call(specialPeron, 2000, 200, 20)
+// console.log(specialPeron.salary)
+
+normalPerson.getSalary.apply(specialPeron, [3000, 300, 30]);
 console.log(specialPeron.salary)
