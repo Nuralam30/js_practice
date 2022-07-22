@@ -1,7 +1,12 @@
 
 console.log(1111)
 
-setTimeout( ()=>{
+// setTimeout( ()=>{
+//     console.log(2222)
+// },2000)
+
+
+setInterval( ()=>{
     console.log(2222)
 },2000)
 
