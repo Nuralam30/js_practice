@@ -13,3 +13,13 @@ function valueAccess(){
 }
 
 valueAccess();
+
+
+// set the value globally if data tupe is not used
+function add(num1, num2){
+    result = num1 + num2;
+    return result
+}
+
+var sum = add(25, 15);
+console.log(result)
