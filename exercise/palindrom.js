@@ -6,7 +6,7 @@ function palindromCheck(text){
         var char = text[i];
         check = char + check;
     }
-    if(check === text){
+    if(check.toLowerCase() === text.toLowerCase()){
         console.log('Palindrom word...');
     }
     else{
