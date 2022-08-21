@@ -1,0 +1,22 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #868a89;
+}
+h4{
+    font-size: 2.2em;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.star-rating i{
+    cursor: pointer;
+}
+
+.fas{
+    font-size: 1.8em;
+    color: #dfd7d7;
+}
+
