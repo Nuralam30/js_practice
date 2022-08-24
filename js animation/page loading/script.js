@@ -26,6 +26,6 @@ function pageLoader(){
 }
 
 function loaderActive(){
-    const loader = document.querySelector('.loader.container');
-    loader.classList.add('hide')
+    const loader = document.querySelector('.loader-container');
+    loader.classList.add('hide');
 }
